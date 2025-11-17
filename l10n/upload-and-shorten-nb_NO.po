@@ -1,0 +1,538 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upload_and_shorten 2.0.0\n"
+"POT-Creation-Date: 2024-01-01 00:00+0100\n"
+"PO-Revision-Date: 2024-01-01 00:00+0100\n"
+"Last-Translator: News Targeted <info@newstargeted.com>\n"
+"Language-Team: News Targeted\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Manual\n"
+
+#: ../plugin.php:40
+msgid "Send a file to your webserver and create a short-URL for it."
+msgstr "Send en fil til webserveren din og lag en kort-URL for den."
+
+#: ../plugin.php:46
+msgid "Select a file "
+msgstr "Velg en fil "
+
+#: ../plugin.php:52
+msgid "YOURLS database options"
+msgstr "YOURLS database alternativer"
+
+#: ../plugin.php:54
+msgid "Custom shortname: "
+msgstr "Tilpasset kortnavn: "
+
+#: ../plugin.php:57
+msgid "Custom title: "
+msgstr "Tilpasset tittel: "
+
+#: ../plugin.php:63
+msgid "Filename conversions (optional)"
+msgstr "Filnavn konverteringer (valgfritt)"
+
+#: ../plugin.php:66
+msgid "No conversion "
+msgstr "Ingen konvertering "
+
+#: ../plugin.php:67
+msgid "Filename will not be changed at all."
+msgstr "Filnavnet vil ikke bli endret i det hele tatt."
+
+#: ../plugin.php:71
+msgid "Browser-safe filename "
+msgstr "Nettleser-sikkert filnavn "
+
+#: ../plugin.php:72
+msgid "Recommended if the file should be accessed by web-browsers."
+msgstr "Anbefalt hvis filen skal tilgås av nettlesere."
+
+#: ../plugin.php:76
+msgid "Randomize filename "
+msgstr "Tilfeldig filnavn "
+
+#: ../plugin.php:77
+msgid ""
+"Browser-safe filenames with a slight protection against systematic crawling "
+"your web-directory."
+msgstr ""
+"Nettleser-sikre filnavn med lett beskyttelse mot systematisk kravling av "
+"din web-mappe."
+
+#: ../plugin.php:81
+msgid "Drop extension "
+msgstr "Fjern utvidelse "
+
+#: ../plugin.php:82
+msgid "Hide the filetype. Can be combined with above options."
+msgstr "Skjul filtypen. Kan kombineres med ovennevnte alternativer."
+
+#: ../plugin.php:84
+msgid ""
+"Some webservers won't send correct headers and web-browsers may not handle "
+"the file correctly."
+msgstr ""
+"Noen webservere sender ikke korrekte headers og nettlesere kan ikke håndtere "
+"filen riktig."
+
+#: ../plugin.php:90
+msgid "  Go!  "
+msgstr "  Gå!  "
+
+#: ../plugin.php:100
+msgid "This plugin is hosted at "
+msgstr "Dette plugin er hostet på "
+
+#: ../plugin.php:101
+msgid "If you like it, remember someone spends his time working on it. "
+msgstr "Hvis du liker det, husk at noen bruker sin tid på å jobbe med det. "
+
+#: ../plugin.php:102
+msgid "A cup of coffee might stimulate further improvements. ;-) "
+msgstr "En kopp kaffe kan stimulere til videre forbedringer. ;-) "
+
+#: ../plugin.php:113
+msgid "You need to select a file to upload."
+msgstr "Du må velge en fil å laste opp."
+
+#: ../plugin.php:203
+msgid " successfully sent. These are the links to your file:"
+msgstr " sendt vellykket. Dette er lenkene til filen din:"
+
+#: ../plugin.php:204
+msgid "Direct: "
+msgstr "Direkte: "
+
+#: ../plugin.php:205
+msgid "Short:  "
+msgstr "Kort:  "
+
+#: ../plugin.php:208
+msgid "Upload failed, sorry! The error was "
+msgstr "Opplasting feilet, beklager! Feilen var "
+
+# New strings for version 2.0.0
+msgid "Storage Locations"
+msgstr "Lagringsplasseringer"
+
+msgid "File Expiration"
+msgstr "Fil utløp"
+
+msgid "Upload Limits"
+msgstr "Opplastingsgrenser"
+
+msgid "Frontend Settings"
+msgstr "Frontend innstillinger"
+
+msgid "Storage location"
+msgstr "Lagringsplassering"
+
+msgid "Expiration Period"
+msgstr "Utløpsperiode"
+
+msgid "Never"
+msgstr "Aldri"
+
+msgid "24 hours"
+msgstr "24 timer"
+
+msgid "7 days"
+msgstr "7 dager"
+
+msgid "31 days"
+msgstr "31 dager"
+
+msgid "90 days"
+msgstr "90 dager"
+
+msgid "Custom"
+msgstr "Tilpasset"
+
+msgid "Custom Days"
+msgstr "Tilpassede dager"
+
+msgid "Maximum File Size (MB)"
+msgstr "Maksimal filstørrelse (MB)"
+
+msgid "Allowed File Types"
+msgstr "Tillatte filtyper"
+
+msgid "Blocked File Types"
+msgstr "Blokkerte filtyper"
+
+msgid "Enable Frontend Uploads"
+msgstr "Aktiver frontend opplastinger"
+
+msgid "Upload Page Message"
+msgstr "Opplastingsside melding"
+
+msgid "Require Authentication"
+msgstr "Krev autentisering"
+
+msgid "Rate Limit (uploads per hour)"
+msgstr "Hastighetsgrense (opplastinger per time)"
+
+msgid "Save Settings"
+msgstr "Lagre innstillinger"
+
+msgid "Uploaded Files"
+msgstr "Opplastede filer"
+
+msgid "Total Files"
+msgstr "Totalt antall filer"
+
+msgid "File"
+msgstr "Fil"
+
+msgid "Short URL"
+msgstr "Kort URL"
+
+msgid "Size"
+msgstr "Størrelse"
+
+msgid "Upload Date"
+msgstr "Opplastingsdato"
+
+msgid "Expires"
+msgstr "Utløper"
+
+msgid "Downloads"
+msgstr "Nedlastinger"
+
+msgid "Actions"
+msgstr "Handlinger"
+
+msgid "View"
+msgstr "Vis"
+
+msgid "Extend"
+msgstr "Forleng"
+
+msgid "Delete"
+msgstr "Slett"
+
+msgid "Copy"
+msgstr "Kopier"
+
+msgid "Copied!"
+msgstr "Kopiert!"
+
+msgid "Choose file or drag and drop"
+msgstr "Velg fil eller dra og slipp"
+
+msgid "Browse"
+msgstr "Bla gjennom"
+
+msgid "Custom URL"
+msgstr "Tilpasset URL"
+
+msgid "Custom Title"
+msgstr "Tilpasset tittel"
+
+msgid "Keep Original"
+msgstr "Behold original"
+
+msgid "Remove unsafe characters for web browsers"
+msgstr "Fjern usikre tegn for nettlesere"
+
+msgid "Generate random filename for privacy"
+msgstr "Generer tilfeldig filnavn for personvern"
+
+msgid "Hide File Extension"
+msgstr "Skjul filutvidelse"
+
+msgid "Remove file extension from filename"
+msgstr "Fjern filutvidelse fra filnavn"
+
+msgid "Upload & Create Short URL"
+msgstr "Last opp og lag kort URL"
+
+msgid "Uploading..."
+msgstr "Laster opp..."
+
+msgid "File uploaded successfully!"
+msgstr "Fil lastet opp vellykket!"
+
+msgid "Direct Link:"
+msgstr "Direkte lenke:"
+
+msgid "Short URL:"
+msgstr "Kort URL:"
+
+msgid "Error:"
+msgstr "Feil:"
+
+msgid "Success:"
+msgstr "Suksess:"
+
+msgid "Warning:"
+msgstr "Advarsel:"
+
+msgid "Info:"
+msgstr "Info:"
+
+msgid "Loading..."
+msgstr "Laster..."
+
+msgid "Security check failed"
+msgstr "Sikkerhetssjekk feilet"
+
+msgid "Please select a file to upload"
+msgstr "Vennligst velg en fil å laste opp"
+
+msgid "Failed to create short URL"
+msgstr "Kunne ikke lage kort URL"
+
+msgid "Failed to save file"
+msgstr "Kunne ikke lagre fil"
+
+msgid "Upload processing failed"
+msgstr "Opplastingsbehandling feilet"
+
+msgid "Frontend uploads are disabled"
+msgstr "Frontend opplastinger er deaktivert"
+
+msgid "Authentication required"
+msgstr "Autentisering påkrevd"
+
+msgid "Rate limit exceeded"
+msgstr "Hastighetsgrense overskredet"
+
+msgid "No file uploaded"
+msgstr "Ingen fil lastet opp"
+
+msgid "Invalid URL format"
+msgstr "Ugyldig URL format"
+
+msgid "URL already exists"
+msgstr "URL finnes allerede"
+
+msgid "URL created successfully"
+msgstr "URL opprettet vellykket"
+
+msgid "URL creation failed"
+msgstr "URL opprettelse feilet"
+
+msgid "Keyword cannot be empty"
+msgstr "Nøkkelord kan ikke være tomt"
+
+msgid "Keyword must be between 1 and 200 characters"
+msgstr "Nøkkelord må være mellom 1 og 200 tegn"
+
+msgid "Keyword can only contain letters, numbers, hyphens, and underscores"
+msgstr "Nøkkelord kan bare inneholde bokstaver, tall, bindestrek og understreker"
+
+msgid "Keyword is already taken"
+msgstr "Nøkkelord er allerede tatt"
+
+msgid "Keyword is reserved"
+msgstr "Nøkkelord er reservert"
+
+msgid "File type not allowed"
+msgstr "Filtype ikke tillatt"
+
+msgid "File size exceeds maximum allowed size"
+msgstr "Filstørrelse overskrider maksimal tillatt størrelse"
+
+msgid "File is empty"
+msgstr "Fil er tom"
+
+msgid "Could not determine file type"
+msgstr "Kunne ikke bestemme filtype"
+
+msgid "File type mismatch"
+msgstr "Filtype samsvarer ikke"
+
+msgid "Executable files are not allowed"
+msgstr "Kjørbare filer er ikke tillatt"
+
+msgid "PHP files are not allowed"
+msgstr "PHP filer er ikke tillatt"
+
+msgid "File contains PHP code"
+msgstr "Fil inneholder PHP kode"
+
+msgid "File contains script tags"
+msgstr "Fil inneholder script tags"
+
+msgid "File appears to be executable"
+msgstr "Fil ser ut til å være kjørbar"
+
+msgid "Could not read file for content validation"
+msgstr "Kunne ikke lese fil for innholdsvalidering"
+
+msgid "File was not uploaded properly"
+msgstr "Fil ble ikke lastet opp riktig"
+
+msgid "Could not create storage directory"
+msgstr "Kunne ikke opprette lagringsmappe"
+
+msgid "Failed to move uploaded file"
+msgstr "Kunne ikke flytte opplastet fil"
+
+msgid "Failed to store file record"
+msgstr "Kunne ikke lagre filpost"
+
+msgid "Settings saved successfully!"
+msgstr "Innstillinger lagret vellykket!"
+
+msgid "Failed to save settings"
+msgstr "Kunne ikke lagre innstillinger"
+
+msgid "No files found."
+msgstr "Ingen filer funnet."
+
+msgid "Are you sure you want to delete this file?"
+msgstr "Er du sikker på at du vil slette denne filen?"
+
+msgid "Are you sure you want to perform this action?"
+msgstr "Er du sikker på at du vil utføre denne handlingen?"
+
+msgid "Please select an action and files"
+msgstr "Vennligst velg en handling og filer"
+
+msgid "Enter number of days to extend:"
+msgstr "Skriv inn antall dager å forlenge:"
+
+msgid "Bulk Actions"
+msgstr "Massehandlinger"
+
+msgid "Extend Expiration"
+msgstr "Forleng utløp"
+
+msgid "Delete Files"
+msgstr "Slett filer"
+
+msgid "Apply"
+msgstr "Bruk"
+
+msgid "Previous"
+msgstr "Forrige"
+
+msgid "Next"
+msgstr "Neste"
+
+msgid "All Files"
+msgstr "Alle filer"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Expired"
+msgstr "Utløpt"
+
+msgid "Expiring Soon"
+msgstr "Utløper snart"
+
+msgid "Filter"
+msgstr "Filtrer"
+
+msgid "Add Storage Location"
+msgstr "Legg til lagringsplassering"
+
+msgid "Test"
+msgstr "Test"
+
+msgid "Remove"
+msgstr "Fjern"
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "Storage Path"
+msgstr "Lagringssti"
+
+msgid "Web URL"
+msgstr "Web URL"
+
+msgid "Enabled"
+msgstr "Aktivert"
+
+msgid "Default Storage Location"
+msgstr "Standard lagringsplassering"
+
+msgid "Default Expiration Period"
+msgstr "Standard utløpsperiode"
+
+msgid "Number of days for custom expiration"
+msgstr "Antall dager for tilpasset utløp"
+
+msgid "Maximum file size allowed for uploads"
+msgstr "Maksimal filstørrelse tillatt for opplastinger"
+
+msgid "Comma-separated list of allowed file extensions (leave empty to allow all)"
+msgstr "Kommadelt liste over tillatte filutvidelser (la stå tom for å tillate alle)"
+
+msgid "Comma-separated list of blocked file extensions"
+msgstr "Kommadelt liste over blokkerte filutvidelser"
+
+msgid "Allow public users to upload files"
+msgstr "Tillat offentlige brukere å laste opp filer"
+
+msgid "Message displayed on the public upload page"
+msgstr "Melding vist på den offentlige opplastingssiden"
+
+msgid "Require users to be logged in to upload files"
+msgstr "Krev at brukere er logget inn for å laste opp filer"
+
+msgid "Maximum uploads per IP address per hour"
+msgstr "Maksimal antall opplastinger per IP-adresse per time"
+
+msgid "Full path to storage directory"
+msgstr "Full sti til lagringsmappe"
+
+msgid "Public URL to access files"
+msgstr "Offentlig URL for å få tilgang til filer"
+
+msgid "Web URL should end with a slash"
+msgstr "Web URL bør slutte med skråstrek"
+
+msgid "Storage path should end with a slash"
+msgstr "Lagringssti bør slutte med skråstrek"
+
+msgid "Path does not exist"
+msgstr "Sti finnes ikke"
+
+msgid "Path is not a directory"
+msgstr "Sti er ikke en mappe"
+
+msgid "Directory is not writable"
+msgstr "Mappe er ikke skrivbar"
+
+msgid "Path is valid and writable"
+msgstr "Sti er gyldig og skrivbar"
+
+msgid "Invalid web URL format"
+msgstr "Ugyldig web URL format"
+
+msgid "Storage location test completed (simulated)"
+msgstr "Lagringsplassering test fullført (simulert)"
+
+msgid "Storage location not found"
+msgstr "Lagringsplassering ikke funnet"
+
+msgid "Could not create or access storage directory"
+msgstr "Kunne ikke opprette eller få tilgang til lagringsmappe"
+
+msgid "Could not write test file"
+msgstr "Kunne ikke skrive testfil"
+
+msgid "Could not read test file"
+msgstr "Kunne ikke lese testfil"
+
+msgid "Total files"
+msgstr "Totalt antall filer"
+
+msgid "Total size"
+msgstr "Total størrelse"
+
+msgid "Available space"
+msgstr "Tilgjengelig plass"
+
+msgid "Upload files and get short URLs instantly!"
+msgstr "Last opp filer og få korte URLer øyeblikkelig!"

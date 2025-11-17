@@ -1,87 +1,248 @@
-YOURLS Plugin: Upload and Shorten
-=================================
+# Upload and Shorten Advanced Plugin for YOURLS
 
-Plugin for [YOURLS](http://yourls.org) (version 1.7 or newer)
+[![Listed in Awesome YOURLS!](https://img.shields.io/badge/Awesome-YOURLS-C5A3BE)](https://github.com/YOURLS/awesome)
+[![YOURLS Version](https://img.shields.io/badge/YOURLS-1.7%2B-blue.svg)](http://yourls.org)
+[![PHP Version](https://img.shields.io/badge/PHP-7.4--8.6-green.svg)](https://php.net)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
+[![Version](https://img.shields.io/badge/Version-2.0.0-brightgreen.svg)](#changelog)
+[![Discord](https://img.shields.io/discord/267294261941239808?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/nx9Kzrk)
 
-Description
------------
-This plugin lets you upload a file to your webserver and automagically creates a YOURLS short-URL for it. Then you can share that file by its short link as well as its full URL.
+**Version:** 2.0.0
 
-Features
---------
-  * Different ways to change the filename during the upload
-  * Make a note about it for yourself in the YOURLS database (by default the title field is filled with the original filename and the alteration method)
-  * Keep track of views/downloads via YOURLS´s history function
-  * Localization support (currently: French, English, Spanish, German and Simplified Chinese. More translations provided by volounteers are greatly appreciated.)
+**Enhanced by:** Master3395 / [News Targeted](https://newstargeted.com/)
 
-Requirements
-------------
-What you need:
+**License:** MIT
 
-  * A webserver with PHP support
-  * A functional installation of [YOURLS](http://yourls.org)
-  * This Plugin ;-)
-  * A bit of understanding what it does and what you can do with it ;-)
 
-Installation
-------------
+A powerful YOURLS plugin that allows you to upload files to your server and automatically create short URLs for them. Perfect for sharing files, documents, images, and more with clean, trackable links.
 
-  * Navigate to the folder `./user/plugins/` inside your YOURLS-install directory
+![Upload Interface](images/upload-interface.png)
+*Upload files and create short URLs instantly with an intuitive, modern interface*
 
-  * Use any of these two ways to install:
-    - **Either** clone this repo using `git`
-    - **or** create a new folder named ´Upload-and-Shorten´, then download all files from here *into that directory*. 
+## Quick Start
 
-  * Prepare your configuration:
-    * If necessary create a directory where your files can be accessed from the webserver (i.e '/full/path/to/httpd/directory/')
-    * Depending on your webserver´s setup you may have to modify the permissions of that directory:  
-      - Make sure your webserver has read+write permissions for it. Explaining that is beyond the scope of this readme, please refer to the manual of your server, operating system or hosting provider. On a Linux box something like  
-       `chown :www-data /full/path/to/httpd/directory &&  chmod g+rwx /full/path/to/httpd/directory`  
-       should do the trick, but please don't rely on it.  
-       **A correct server configuration is important for its functionality, but essential for its safety!**
-    * Now open `./user/config.php` in your YOURLS-directory with any text editor and ...
-      - add these definition lines and save the file:  
-       `# Paths for plugin: "Upload-and-Shorten":`  
-       `# The web URL path where YOURLS short-links will redirect to:`  
-       `define( 'SHARE_URL', 'http://my.domain.tld/directory/' );`  
-       `# The physical path where the plugin drops your files into:`  
-       `define( 'SHARE_DIR', '/full/path/to/httpd/directory/' );` 
-       (Adjust paths to your needs...)
+### Installation
 
-  * Go to the Plugins Administration Page (eg. `http://sho.rt/admin/plugins.php`) and activate the plugin.
+1. Use the [Download Plugin](https://github.com/krissss/yourls-download-plugin) or manually upload to `/user/plugins/`
+2. Activate the plugin in your YOURLS admin panel
+3. Configure settings in "Upload Settings" page
+4. Start uploading files!
 
-  * Have fun!
+### Basic Setup
 
-  * Consider helping with translations.
+1. Set maximum file size (default: 10 MB)
+2. Configure allowed file types
+3. Choose storage location
+4. Enable frontend uploads (optional)
+5. Save and test!
 
-Bugs & Issues
--------------
-No critical misbehaviour known, most issues are caused by configuration errors.
-Beware of scripts and plugins which validate URLs or intercept the data flow. ~~Namely the plugin "Check URL" can interfere with this plugin,~~ (This issue has been fixed for basic setups, see [issue #11](https://github.com/fredl99/YOURLS-Upload-and-Shorten/issues/11).)  However, there might still occur interferences with plugins which check target URLs or manipulate the database by themselves. So, when you notice a strange behaviour always think about this and if you report an issue please include a list of installed and activated plugins.
+## Key Features
 
-Localization (l10n)
---------------------
-This plugin supports **localization** (translations into your language). 
-**For this to work you need at least YOURLS v1.7 from March 1, 2015**. It will basically work fine with earlier versions, except that translations won't work because of a minor bug in the YOURLS-code. Just upgrade to the latest YOURLS version and it will do. 
+- **File Upload & Shortening** - Upload files and get instant short URLs
+- **Admin Panel Integration** - Full admin interface with settings management
+- **Frontend Upload Support** - Allow public users to upload files (configurable)
+- **Multiple Storage Locations** - Configure different storage paths for various needs
+- **File Expiration** - Set automatic file cleanup with customizable retention periods
+- **Download Tracking** - Track file downloads through YOURLS analytics
+- **Advanced Security** - CSRF protection, MIME validation, path traversal prevention, rate limiting
+- **Mobile-First Design** - Fully responsive and optimized for all devices
+- **Drag & Drop Support** - Modern file upload experience with progress indicators
+- **Multi-Language Support** - Available in English, German, French, Spanish, Chinese, and Norwegian
 
-The default language is English. Translation files for French, German, Spanish and Simplified Chinese are included in the folder `l10n/`. To use this feature you just have to define your locale in `user/config.php` like this:  
-`define( 'YOURLS_LANG', 'de_DE' );`  
-(can be found within the standard YOURLS options there)
+## Features Overview
 
-Looking for translators
------------------------
-If you're willing to provide translations, please [read this](http://blog.yourls.org/2013/02/workshop-how-to-create-your-own-translation-file-for-yourls/). If necessary you can contact me for further instructions. Any help is  appreciated, at most by your fellow countrymen!
+### Core Functionality
 
-Donations
----------
-There are many ways to integrate this plugin into your daily routines. The more you use it the more you will discover. The more you discover the more you will like it.  
-If you do, remember someone spends his time for improving it. If you want say thanks for that, just [buy him a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H5B9UKVYP88X4). That will certainly motivate him to make further enhancements. Just for You! ...  
-![](https://s.fredls.net/wjotnlsc1igvzq) and him :)
+- Upload files and get instant short URLs
+- Full admin interface with settings management
+- Public upload interface (configurable)
+- View, manage, and delete uploaded files
+- Track file downloads through YOURLS analytics
 
-License
--------
-**Free for personal use only.**  
-If you want to make money with it you have to contact me first.  
+### Admin Features
 
-Thanks for your attention.
+- Configure multiple storage locations
+- Set maximum file sizes for uploads
+- Control allowed file extensions
+- Configure automatic file cleanup
+- Enable/disable public uploads
+- Bulk file management
+- Pagination for large file lists
+- Advanced filtering and search
 
+![Admin Integration](images/admin-integration.png)
+*Seamlessly integrated with YOURLS admin panel for easy management*
+
+### Frontend Features
+
+- Clean, responsive upload form
+- Drag & drop file upload
+- Real-time progress indicators
+- Copy to clipboard functionality
+- Mobile responsive design
+- Custom upload messages
+- Rate limiting per IP
+
+![Public Upload Interface](images/public-upload-interface.png)
+*Beautiful public upload interface with file guidelines and easy-to-use controls*
+
+### Security & Performance
+
+- CSRF protection for secure form submissions
+- MIME type and content validation
+- Path traversal prevention
+- Rate limiting to prevent abuse
+- Clean URL support (SEO-friendly)
+- Modular code structure (under 500 lines per file)
+- Optimized database queries
+
+## Documentation
+
+- [Installation Guide](guides/installation.md) - Complete installation instructions
+- [Configuration Guide](guides/configuration.md) - Settings and options
+- [Usage Guide](guides/usage.md) - How to use the plugin
+- [Advanced Configuration](guides/advanced-configuration.md) - Custom setups
+- [Compatibility Guide](guides/compatibility.md) - System requirements and compatibility
+- [Internationalization](guides/internationalization.md) - Language support
+- [Troubleshooting Guide](guides/troubleshooting.md) - Common issues
+- [Changelog](changelogs/README.md) - Version history and updates
+
+## Installation
+
+See the complete [Installation Guide](guides/installation.md) for detailed instructions.
+
+### Quick Install
+
+1. Install via [Download Plugin](https://github.com/krissss/yourls-download-plugin) or clone to `/user/plugins/`
+2. Set directory permissions (755 for plugin, 777 for uploads)
+3. Activate in YOURLS admin panel
+4. Configure settings
+
+For detailed steps, troubleshooting, and server-specific instructions, see the [Installation Guide](guides/installation.md).
+
+## Configuration
+
+Configure the plugin through **Admin Panel → Upload Settings**. See the [Configuration Guide](guides/configuration.md) for detailed settings documentation.
+
+![Settings Page](images/settings-page.png)
+*Configure all plugin settings from the intuitive admin interface*
+
+### Key Settings
+
+- **File Upload Limits** - Max size and allowed types
+- **Storage Locations** - Multiple storage paths with individual settings
+- **File Expiration** - Automatic cleanup (24 hours to never)
+- **Frontend Uploads** - Public upload controls and restrictions
+- **Security** - CSRF protection, MIME validation, rate limiting
+
+For complete configuration details, including advanced options and security settings, see the [Configuration Guide](guides/configuration.md).
+
+## Usage
+
+See the complete [Usage Guide](guides/usage.md) for detailed instructions.
+
+### Quick Usage
+
+**Admin Upload:**
+1. Go to **Upload & Shorten** in admin panel
+2. Select file, customize options
+3. Get instant short URL
+
+**Frontend Upload** (if enabled):
+1. Visit YOURLS homepage
+2. Use upload form
+3. Share generated short URL
+
+**File Management:**
+- View, search, and filter files in admin panel
+- Track downloads and statistics
+- Bulk operations and expiration management
+
+![File Management](images/file-management.png)
+*Manage all your uploaded files with detailed statistics and easy controls*
+
+For detailed workflows, best practices, and advanced features, see the [Usage Guide](guides/usage.md).
+
+## Internationalization
+
+The plugin is available in 6 languages. See the [Internationalization Guide](guides/internationalization.md) for details.
+
+**Supported:** English, German, French, Spanish, Chinese (Simplified), Norwegian (Bokmål)
+
+Configure in `user/config.php`:
+```php
+define('YOURLS_LANG', 'nb_NO'); // Use your language code
+```
+
+Want to contribute a translation? See the [Internationalization Guide](guides/internationalization.md).
+
+
+## Compatibility
+
+Compatible with YOURLS 1.7+, PHP 7.4-8.6, and all major web servers (Apache, Nginx, OpenLiteSpeed, LiteSpeed Enterprise). Works with CyberPanel, cPanel, and Plesk. Tested on AlmaLinux 9.6 & 10.
+
+For complete compatibility details, system requirements, and theme compatibility, see the [Compatibility Guide](guides/compatibility.md).
+
+## Troubleshooting
+
+Having issues? See the [Troubleshooting Guide](guides/troubleshooting.md) for solutions.
+
+### Common Issues
+
+- **File uploads not working** - Check permissions and PHP limits
+- **Short URLs not redirecting** - Verify file location and .htaccess
+- **Frontend uploads not showing** - Check settings and theme compatibility
+- **Database errors** - Verify tables and permissions
+
+### Debug Mode
+
+```php
+// Add to user/config.php
+define('YOURLS_DEBUG', true);
+define('UPLOAD_DEBUG', true);
+```
+
+For detailed solutions and debug instructions, see the [Troubleshooting Guide](guides/troubleshooting.md).
+
+## Changelog
+
+**Current Version:** 2.0.0 (October 2025)
+
+Complete rewrite with enhanced security, modern UI/UX, frontend uploads, file expiration, multiple storage locations, and comprehensive admin interface.
+
+View complete version history and release notes in the [changelogs directory](changelogs/).
+
+## Support & Contribution
+
+- **Issues:** [GitHub Issues](https://github.com/master3395/YOURLS-Upload-and-Shorten-Advanced/issues)
+- **Discord:** [Join our Discord Server](https://discord.gg/nx9Kzrk)
+- **Website:** [newstargeted.com](https://newstargeted.com)
+- **Email:** [info@newstargeted.com](mailto:info@newstargeted.com)
+
+### Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Report Bugs** - Use the issue tracker to report problems
+2. **Suggest Features** - Propose new functionality
+3. **Translate** - Help with language translations
+4. **Code** - Submit pull requests for improvements
+5. **Documentation** - Improve documentation and examples
+
+## Author
+
+### Master3395 / News Targeted
+
+- Website: [newstargeted.com](https://newstargeted.com/)
+- Email: [info@newstargeted.com](mailto:info@newstargeted.com)
+- GitHub: [@master3395](https://github.com/master3395)
+
+## Credits
+
+**Enhanced by:** Master3395 / [News Targeted](https://newstargeted.com)
+
+For complete development history, original authors, and contributor credits, see the [Version 1.0.0 Changelog](changelogs/v1.0.0.md).
+
+## License
+
+MIT License - Free to modify and distribute.
